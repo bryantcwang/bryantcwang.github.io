@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bryant W</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --text: #111111;
+      --muted: #666666;
+      --link: #111111;
+      --hover: #2456c4;
+      --bg: #ffffff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text: #eeeeee;
+        --muted: #aaaaaa;
+        --link: #eeeeee;
+        --hover: #8ab4ff;
+        --bg: #111111;
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 24px;
+    }
+    .card { text-align: center; max-width: 640px; width: 100%; }
+    .name { font-size: 1.75rem; font-weight: 700; margin: 0 0 6px; }
+    .line { font-size: 1.1rem; margin: 0 0 26px; color: var(--text); }
+    .links { display: flex; flex-wrap: wrap; gap: 18px; justify-content: center; font-size: 1.05rem; }
+    .links a {
+      color: var(--link);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      padding-bottom: 2px;
+      transition: color 0.15s, border-color 0.15s;
+    }
+    .links a:hover { color: var(--hover); border-bottom-color: var(--hover); }
+    footer { margin-top: 28px; font-size: 0.8rem; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1 class="name">Bryant W</h1>
+    <p class="line">I study math &amp; computer science at UC Berkeley and I'm transferring to UChicago — working on projects, learning, and building things.</p>
+
+    <nav class="links">
+      <a href="resume.pdf">resume</a>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener">linkedin</a>
+      <a href="https://github.com/" target="_blank" rel="noopener">github</a>
+      <a href="mailto:hello@example.com">email</a>
+    </nav>
+
+    <footer>© 2026 Bryant W</footer>
+  </div>
+</body>
+</html>
