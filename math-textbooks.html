@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>math textbooks — Bryant Wang</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --text: #111111;
+      --muted: #666666;
+      --link: #111111;
+      --hover: #2456c4;
+      --bg: #ffffff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text: #eeeeee;
+        --muted: #aaaaaa;
+        --link: #eeeeee;
+        --hover: #8ab4ff;
+        --bg: #111111;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+      padding: 48px 24px;
+      display: flex;
+      justify-content: center;
+    }
+    .wrap { max-width: 640px; width: 100%; }
+    .back {
+      display: inline-block;
+      margin-bottom: 28px;
+      color: var(--link);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      padding-bottom: 2px;
+      transition: color 0.15s, border-color 0.15s;
+      font-size: 0.95rem;
+    }
+    .back:hover { color: var(--hover); border-bottom-color: var(--hover); }
+    h1 { font-size: 1.75rem; font-weight: 700; margin: 0 0 8px; }
+    .intro { margin: 0 0 32px; color: var(--muted); }
+    h2 {
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 0 0 4px;
+    }
+    .note {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    section + section { margin-top: 32px; }
+    ul.books {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    ul.books li {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 14px 0;
+      border-top: 1px solid color-mix(in srgb, var(--muted) 35%, transparent);
+    }
+    ul.books li:last-child {
+      border-bottom: 1px solid color-mix(in srgb, var(--muted) 35%, transparent);
+    }
+    .book { min-width: 0; }
+    .title { font-weight: 600; margin: 0 0 2px; }
+    .meta { margin: 0; color: var(--muted); font-size: 0.95rem; }
+    .course {
+      flex-shrink: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    footer { margin-top: 36px; font-size: 0.8rem; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="index.html">← back</a>
+    <h1>math textbooks</h1>
+    <p class="intro">books i've read for fun or classes, and books i want to read.</p>
+
+    <section>
+      <h2>Read</h2>
+      <ul class="books">
+        <li>
+          <div class="book">
+            <p class="title">How to Prove It</p>
+            <p class="meta">Daniel J. Velleman</p>
+          </div>
+        </li>
+        <li>
+          <div class="book">
+            <p class="title">Linear Algebra Done Right</p>
+            <p class="meta">Sheldon Axler</p>
+          </div>
+        </li>
+        <li>
+          <div class="book">
+            <p class="title">Real Mathematical Analysis</p>
+            <p class="meta">Charles Chapman Pugh</p>
+          </div>
+          <span class="course">Math H104</span>
+        </li>
+      </ul>
+      <p class="note">a solid chunk of each, not always the whole book.</p>
+    </section>
+
+    <section>
+      <h2>To read</h2>
+      <ul class="books">
+        <li>
+          <div class="book">
+            <p class="title">Knots and Links</p>
+            <p class="meta">Dale Rolfsen</p>
+          </div>
+        </li>
+        <li>
+          <div class="book">
+            <p class="title">Elements of the Topology of Plane Sets of Points</p>
+            <p class="meta">M. H. A. Newman</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <footer>© 2026 Bryant Wang</footer>
+  </div>
+</body>
+</html>

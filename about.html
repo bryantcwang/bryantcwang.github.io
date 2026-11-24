@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>about — Bryant Wang</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --text: #111111;
+      --muted: #666666;
+      --link: #111111;
+      --hover: #2456c4;
+      --bg: #ffffff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text: #eeeeee;
+        --muted: #aaaaaa;
+        --link: #eeeeee;
+        --hover: #8ab4ff;
+        --bg: #111111;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+      padding: 48px 24px;
+      display: flex;
+      justify-content: center;
+    }
+    .wrap { max-width: 640px; width: 100%; }
+    .back {
+      display: inline-block;
+      margin-bottom: 28px;
+      color: var(--link);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      padding-bottom: 2px;
+      transition: color 0.15s, border-color 0.15s;
+      font-size: 0.95rem;
+    }
+    .back:hover { color: var(--hover); border-bottom-color: var(--hover); }
+    h1 { font-size: 1.75rem; font-weight: 700; margin: 0 0 16px; }
+    .body p { margin: 0 0 1em; }
+    .body p:last-child { margin-bottom: 0; }
+    footer { margin-top: 36px; font-size: 0.8rem; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="index.html">← back</a>
+    <h1>about</h1>
+    <div class="body">
+      <p>i study math at uc berkeley.</p>
+    </div>
+    <footer>© 2026 Bryant Wang</footer>
+  </div>
+</body>
+</html>
